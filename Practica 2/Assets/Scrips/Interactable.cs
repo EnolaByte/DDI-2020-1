@@ -13,9 +13,9 @@ public class Interactable : MonoBehaviour
     }
     void Update()
     {
-        //Input.GetKeyDown(KeyCode.Q)
+        //Input.GetKeyDown(KeyCode.E)
         //isInsideZone && CrossPlatformInputManager.GetButtonDown("Fire1")
-        if(isInsideZone && Input.GetKeyDown(KeyCode.E))
+        if(isInsideZone && CrossPlatformInputManager.GetButtonDown("Fire1"))
         {
             Interact();
         }

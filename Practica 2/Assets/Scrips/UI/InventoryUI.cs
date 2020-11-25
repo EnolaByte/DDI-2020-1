@@ -22,9 +22,9 @@ public class InventoryUI : MonoBehaviour
 
     void Update()
     {
-        //Input.GetKeyDown(KeyCode.I)
+        //Input.GetKeyDown(KeyCode.Q)
         //CrossPlatformInputManager.GetButtonDown("Fire2")
-        if(Input.GetKeyDown(KeyCode.Q))
+        if(CrossPlatformInputManager.GetButtonDown("Fire2"))
         {
         	Menu.SetActive(!Menu.activeSelf);
             UpdateUI();
